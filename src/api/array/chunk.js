@@ -6,21 +6,22 @@
 //     (Array): Returns the new array of chunks.
 
 
-export default function chunk(array, number) {
-    const return_arr = [];
-    let sub_arr = [];
-    let k = 0;
-    for(let i = 0; i < array.length; i++) {
-        sub_arr.push(array[i]);
-        k++;
-        if(k === number && i !== array.length - 1) {
-            return_arr.push(sub_arr);
-            sub_arr = [];
-            k = 0;
-        }
-        if(i === array.length - 1) {
-            return_arr.push(sub_arr);
+export default function chunk(array, number = 1) {
+    if(typeof number !== 'number' || !Array.isArray(array)) {
+        return [];
+    }else {
+        number = parseInt(String(number));
+        if(number === 0) {
+            return [];
+        }else {
+            const return_arr = [];
+            const reaminder = Math.ceil(array.length / number);
+            for(let i = 0; i < reaminder; i++) {
+                const arrays = array.slice(i * number, (i + 1) * number);
+                return_arr.push(arrays);
+            }
+            return return_arr;
         }
     }
-    console.log(return_arr);
+    
 }
