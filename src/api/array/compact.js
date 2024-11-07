@@ -18,5 +18,5 @@ export default function compact(array) {
                 res_array.push(array[i]);
         }
     }
-    console.log(res_array);
+    return res_array
 }
