@@ -8,5 +8,6 @@ export default class Core {
 
 Core.prototype.pull = ArrayList.pull;
 Core.prototype.chunk = ArrayList.chunk;
+Core.prototype.compact = ArrayList.compact;
 
 
