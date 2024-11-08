@@ -7,7 +7,7 @@
 
 
 export default function chunk(array, number = 1) {
-    if(typeof number !== 'number' || !Array.isArray(array)) {
+    if(typeof number !== "number" || !Array.isArray(array)) {
         return [];
     }else {
         number = parseInt(String(number));
