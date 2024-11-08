@@ -8,5 +8,5 @@
 | `drop`         | array  | ✔️             |
 | `pull`         | array  | ✔️             |
 
-#License
-![github license]() 
+# License
+![License](https://img.shields.io/badge/license-MIT-yellow) iaamlele
