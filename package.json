@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "test_lodash.js",
   "directories": {
-    "test": "test"
+    "test": "jest"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -12,5 +12,14 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "After reading some documents about lodash, I implemented lodash manually.",
+  "devDependencies": {
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.21"
+  }
 }

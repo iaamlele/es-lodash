@@ -1,3 +1,9 @@
+// _.pull(array, [values]): Removes all given values from array using SameValueZero for equality comparisons.
+// Arguments
+//      array (Array): The array to modify.
+//      [values] (...*): The values to remove.
+// Returns
+//      (Array): Returns array.
 
 export default function pull(arr, ...s) {
     for(let i = 0; i < s.length; i++) {
